@@ -1,0 +1,154 @@
+*{
+  padding :0;
+  margin:0;
+}
+.navbar{
+    padding: 15px 20px;
+    align-items: center;
+    height:38px;
+    background-color:#8d55fb;
+    margin-bottom: 40px;
+}
+
+.navbar,.navdiv{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+}
+.navdiv{
+    width:50%;
+}
+.navlinks{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+.navlinks a{
+    font-family: 'Orbitron', sans-serif;
+    padding:14px;
+    font-weight: 562;
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+}
+.navlinks a:hover{
+    color:black;
+}
+#navi{
+   justify-content: flex-end;
+}
+.menu-toggle{
+    display:none;
+    color:white;
+    padding:14px;
+    border:3px white;
+    cursor:pointer;
+}
+footer{
+    width:100%;
+    padding:10px;
+    position:absolute;
+    text-align: center;
+    color:white;
+    background-color:#8d55fb;
+    bottom:0;
+
+}
+.contact{
+    max-width:400px;
+    margin:auto;
+    padding:40px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow:  0  0 6px  #958fa1;
+}
+.contact label{
+    font-weight:bold;
+}
+.contact h2{
+    text-align: center;
+}
+.contact input,.contact textarea,.contact button{ 
+    font-size: 13px;
+    width:100%;
+    padding: 10px 0;
+    padding-left: 8px;
+    border-radius:7px;
+    margin:8px 0;
+    border: 3px solid #ccc;
+    transition: 0.3s;
+}
+.contact input:focus , .contact textarea:focus{
+    border-color:#8d55fb;
+    outline:none;
+}
+.contact button{
+    background-color: #8d55fb;
+    font-weight: bold;
+}
+.contact button:hover{
+    background-color:#8d55fb;
+    color: white;
+}
+section{
+    padding:20px;
+    border: 2px solid black;
+    width:100%;
+}
+.content{
+    margin-top: 20px;
+    display:flex;
+    width:100%;
+}
+section p,li{
+    margin-top:10px;
+}
+
+section:hover h2{
+    color:#8d55fb;   
+}
+section:hover{
+    border-color:#8d55fb;
+}
+
+@media (max-width:768px){
+    .navdiv{
+        width:100%;
+    }
+    #navi{
+        width:20%;
+    }
+    .content{
+        flex-direction: column;
+    }
+    section{
+        width:100%;
+    }
+    .navlinks{
+        top:50px;
+        margin:10px 0px;
+        padding:10px;
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        text-align:center;
+        background-color: #8d55fb;
+    }
+    .navlinks.active {
+        display: flex;
+    }
+
+    .navlinks a {
+        font-size:16px;
+        
+    }
+    .navlinks {
+        border:2px solid black;
+        border-top:none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+}
